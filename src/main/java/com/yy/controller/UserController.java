@@ -18,6 +18,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+
     @PBUserOperatorLog("根据ID查询用户信息11")
     @GetMapping("/userById")
     public Object getUserById(@RequestParam("id") Long id){

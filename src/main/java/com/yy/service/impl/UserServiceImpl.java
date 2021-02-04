@@ -5,6 +5,7 @@ import com.yy.bean.User;
 import com.yy.mapper.UserMapper;
 import com.yy.operatorlog.PBUserOperatorLog;
 import com.yy.service.UserService;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,8 +16,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements UserService {
 
+    @Cacheable(cacheNames = "user")
     @Override
     public User getUserById(Long id) {
+
         return this.getById(id);
     }
 }
