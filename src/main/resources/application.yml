@@ -34,3 +34,8 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+gis:
+  tencent:
+    url: https://apis.map.qq.com/ws/geocoder/v1
+    key: O3QBZ-6KV66-KC3SE-ESJIR-GELXJ-RUBOK
+    def_addr: 哈尔滨

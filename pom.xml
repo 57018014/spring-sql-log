@@ -123,6 +123,12 @@
             <artifactId>commons-io</artifactId>
             <version>${commons-io.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-core</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>

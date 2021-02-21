@@ -43,6 +43,7 @@ public class RedisTest1 {
 
         redisGeoUtil.geoadd("tag01", new GeoCoordinate(126.709715,45.763468), "海底捞道理店", 0);
         redisGeoUtil.geoadd("tag01", new GeoCoordinate(126.709715,45.763538), "海底捞道理店1", 0);
+        redisUtil.zrem("tag01","海底捞道理店1");
     }
 
     /**
